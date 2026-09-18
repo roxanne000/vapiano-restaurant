@@ -1,0 +1,5 @@
+@import 'tailwindcss';
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400&family=Poppins:wght@500&display=swap');
+body { font-family: 'Inter', sans-serif; background: #F8F8F8; }
+h1,h2,h3 { font-family: 'Playfair Display', serif; }
+.glass { background: rgba(255,255,255,0.7); backdrop-filter: blur(16px); }

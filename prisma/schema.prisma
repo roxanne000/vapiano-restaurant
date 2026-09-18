@@ -1,0 +1,4 @@
+generator client { provider = "prisma-client-js" }
+datasource db { provider = "postgresql" url = env("DATABASE_URL") }
+model MenuItem { id String @id @default(cuid()) name String slug String @unique description String price Float category String image String isPopular Boolean @default(false) createdAt DateTime @default(now()) }
+model Reservation { id String @id @default(cuid()) name String phone String email String date DateTime time String guests Int status String @default("PENDING") createdAt DateTime @default(now()) }
